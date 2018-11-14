@@ -104,8 +104,10 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  	color: #3E151F;
  }
 
- .about h2 {
- 	color: #ECA72C;
+ .about h2,
+ .services h2 {
+	 color: #ECA72C;
+	 max-width: 50%;
  }
 
  .gallery h2,
@@ -289,7 +291,7 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  .about {
  	background-color: #3E151F;
  	min-height: 100vh;
- 	padding-top: 9%
+ 	padding-top: 9%;
  }
 
  /*.right {
@@ -304,7 +306,7 @@ font-family: 'IBM Plex Sans', sans-serif;*/
 	max-width: 30%;
 }
 */
- .about>.left {
+ .about .left {
  	width: 55%;
  	float: left;
 
@@ -465,15 +467,15 @@ img[alt*="gallery"] {
  	background-color: #721124;
  	min-height: 90vh;
  	position: relative;
+ 	padding-top: 9%;
+
  }
 
  .services::after {
  	content: "";
-
  	background: url(../images/bg-contact.jpg) center center no-repeat;
  	background-size: cover;
  	background-attachment: fixed;
-
  	opacity: 0.2;
  	top: 0;
  	left: 0;
@@ -483,9 +485,32 @@ img[alt*="gallery"] {
  	z-index: 0;
  }
 
+ .services * {
+ 	z-index: 10;
+
+ }
+
  .contact-container {
  	z-index: 10;
+
+ }
+
+
+ .services h2 {
+ 	/*float: left;*/
  	position: absolute;
+ 	font-size: 5em;
+ 	transform: translate(50px, 80px);
+ 	z-index: 100;
+ }
+
+ .services p:after {
+ 	content: "";
+ 	display: block;
+ 	width: inherit;
+ 	height: 3px;
+ 	background-color: #f2f2f2;
+ 	margin-top: 5em;
  }
 
  /* 
@@ -500,6 +525,15 @@ img[alt*="service"] {
 img[alt*="service"]~p {
 	overflow: hidden;
 } */
+ .form-content {
+ 	/* float: left; */
+ 	position: absolute;
+ 	z-index: 100;
+ 	width: 45%;
+ 	padding: 30px;
+ 	transform: translate(20px, 160px);
+ }
+
 
  .form-container form * {
  	display: block;
@@ -517,22 +551,53 @@ img[alt*="service"]~p {
  .form-container textarea {
  	display: block;
  	width: 90%;
- 	margin: 0 auto
+ 	margin: 0 auto;
  }
 
- .form-container input, .form-container textarea  {
-	 height: 3em;
-	 border: 2px solid #3A0812;
+ .form-container input,
+ .form-container textarea {
+ 	height: 3em;
+ 	border: 2px solid #3A0812;
+ 	background-color: #f2f2f2;
+ }
+
+ .form-container label {
+ 	color: #f2f2f2;
+ 	margin-bottom: 5px;
+ 	margin-top: 10px;
  }
 
  .form-container textarea {
-	 margin-top: 20px;
+ 	min-height: 250px;
+ 	margin-bottom: 20px;
  }
 
 
  .form-container form {
  	width: 100%;
+ 	background-color: #3A0812;
+ 	transform: translate(-15px, 15px);
+ 	padding: 20px 0;
+ 	position: relative;
+ }
+
+ .form-container input[type="submit"] {
+ 	width: 30%;
+ 	margin: 0px auto;
+ 	height: 55px;
  	background-color: #ECA72C;
+ 	border: 3px solid #3A0812;
+ 	border-radius: 30px;
+	 color: #3A0812;
+	 font-size: 1rem;
+	font-weight: 600;
+	
+ }
+
+ .form-container input[type="submit"]:hover {
+	 background-color: #721124;
+	 color: #fff;
+	 border: 3px solid white;
  }
 
  /*======= FOOTER =======*/
@@ -546,7 +611,7 @@ img[alt*="service"]~p {
 
  	width: 20px;
  	height: 20px;
- 	border: 1px solid black;
+ 	/* border: 1px solid black; */
  	display: block;
  	float: left;
  	margin-right: 10px;
