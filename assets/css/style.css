@@ -1,0 +1,324 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+
+ 	transition: all 0.4s ease;
+
+ 	font-family: 'IBM Plex Sans', sans-serif;
+ }
+
+ html {
+ 	scroll-behavior: smooth;
+ }
+
+
+ /*======= GENERAL =======*/
+
+ .banner,
+ .about, .services,
+ .projects, .gallery,   
+ footer {
+
+ 	padding: 30px;
+ }
+
+ img {
+ 	max-width: 100%
+ }
+
+
+ .column {
+ 	border: 1px solid black;
+ 	width: 31%;
+ 	margin-left: 1.16%;
+ 	margin-right: : 1.16%;
+ 	float: left;
+ }
+
+ .clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+ /*======= TYPOGRAPHY =======*/
+/*
+font-family: 'IBM Plex Sans', sans-serif;*/
+/*font-family: 'IBM Plex Serif', serif;*/
+
+h1 {
+	font-size: 3em;
+	color: #3E151F;
+	font-family: 'IBM Plex Serif', serif;	
+	/*background-color: #60A561;*/
+}
+
+h1:after {
+	content: "";
+	display: block;
+	width: inherit;
+	height: 5px;
+	background-color: #3E151F;
+	margin-bottom: 5px; 
+}
+
+h2 {
+	text-transform: uppercase;
+	color: white;
+}
+
+.projects h2 {
+	font-family: 'IBM Plex Serif', serif;	
+	color: #3E151F;
+	margin-bottom: 15px;
+}
+
+.box > p {
+	font-size: 1rem;
+	margin-top: 5px;
+	color: #3E151F;
+}
+
+
+
+/* /////////// end typography ////////// */
+
+
+
+
+ /*======= NAV =======*/
+
+nav {
+	background-color: #721124;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+}
+
+
+.logo {
+	height: 140px;
+	width: 140px;
+	/*background-color: darkgray;*/
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.logo-container {
+	width: 140px;
+	margin:20px auto;
+}
+
+nav ul {
+	margin-top: 30px;
+}
+
+nav > ul > li  {
+	list-style: none;
+	/*background-color: lightblue;*/
+	line-height: 20px; /*default size is 16px. 16x3 = 40px*/
+	text-align: center;
+	width: 200px;
+/*	padding-left: 20px;*/
+}
+
+
+nav > ul > li:hover  {
+	background-color: #3A0812;
+
+
+}
+
+nav > ul > li > a {
+	display: block;
+	text-decoration: none;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	padding: 10px;
+	font-weight: 600;	
+	/*transform: translateX(15%);*/
+
+	color: #f2f2f2;
+}
+
+nav > ul > li > a:focus {
+	color: #ECA72C;
+}
+
+nav > ul > li > a:hover {
+	/*transform: translateX(25%);*/
+}
+
+
+
+/* /////////// end nav ////////// */
+
+
+
+ /*======= MAIN =======*/
+main {
+	background-color: lightgray;
+	margin-left: 200px;
+
+}
+
+
+/* /////////// end main ////////// */
+
+
+
+ /*======= BANNER =======*/
+
+.banner {
+	background-color: #fff;
+	height: 100vh;
+	position: relative;
+
+/*	background: url(../images/bg-banner.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+
+.banner::after {
+  	content: "";
+ 	
+ 	background: url(../images/bg-banner.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+ 	opacity: 0.3;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: 0;   
+}
+
+.box {
+	border: 5px solid #3E151F;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	z-index: 10;
+
+}
+
+/* /////////// end banner ////////// */
+
+
+
+ /*======= ABOUT =======*/
+
+.about {
+	background-color: indianred;
+	min-height: 100vh;
+}
+
+
+ /*======= SERVICES =======*/
+.services {
+	background-color: midnightblue;
+	min-height: 300px;
+}
+
+
+img[alt*="service"] {
+	border: 1px solid black;
+	width: 60px;
+	height: 60px;
+	display: block;
+	float: left;
+}
+
+img[alt*="service"] ~ p {
+	overflow: hidden;
+}
+
+ /*======= PROJECTS =======*/
+.projects {
+	background-color: #3E151F;
+	min-height: 60vh;
+		position: relative;
+
+/*	background: url(../images/bg-projects.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+}
+
+.projects::after {
+  	content: "";
+
+ 	
+ 	background: url(../images/bg-projects.jpg) center center no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+ 	opacity: 0.5;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: 0;   
+}
+
+.box2 {
+	background-color: #f2f2f2;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	z-index: 10;
+
+}
+
+
+ /*======= GALLERY =======*/
+.gallery {
+	background-color: orange;
+	min-height: 100vh;
+}
+
+.gallery > .column {
+	width:23%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+img[alt*="gallery"] {
+	max-width: 100%;
+	height: 100px;
+	display: block;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+
+
+ /*======= FOOTER =======*/
+footer {
+	background-color: white;
+	height: 50px;
+}
+
+img[alt*="social"] {
+
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	display: block;
+	float: left; 
+	margin-right: 10px;
+}
+
+.contact {
+	float: right;
+}
