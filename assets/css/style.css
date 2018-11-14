@@ -89,6 +89,7 @@ p {
 	font-family: 'IBM Plex Serif', serif;	
 	color: #3E151F;
 	margin-bottom: 15px;
+	letter-spacing: 0.1rem;
 }
 
 .projects p {
