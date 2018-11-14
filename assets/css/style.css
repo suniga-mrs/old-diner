@@ -110,18 +110,23 @@ font-family: 'IBM Plex Sans', sans-serif;*/
 	 max-width: 50%;
  }
 
- .gallery h2,
- .gallery p {
+ .gallery h2{
  	color: #3E151F;
  }
 
+ 
+ .gallery p {
+	 color: white;
+ }
+
  .gallery h2 {
- 	font-size: 3em;
+ 	font-size: 5em;
  }
 
  .gallery h3 {
- 	text-align: center;
- 	color: #ECA72C;
+ 	/* text-align: center; */
+	 color: #ECA72C;
+	 text-transform: uppercase;
  	/* background-color: #3E151F; */
  }
 
@@ -411,7 +416,8 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  .gallery {
  	background-color: #f2f2f2;
  	min-height: 100vh;
- 	padding: initial 4%;
+	 padding: initial 4%;
+	padding-top: 5%;
  }
 
  .img-caption {
@@ -419,14 +425,18 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  }
 
  img[alt*="gallery"] {
- 	width: 100%;
+	 width: 100%;
+	 border-radius: 15px 0 0 0;
 
  }
 
  .column2 {
- 	margin: 0 5px;
+	width:23%;
+	margin-left: 1%;
+	margin-right: 1%;
  	border: 5px solid #3E151F;
- 	background-color: #3A0812;
+	 background-color: #3A0812;
+	 border-radius: 20px 0 20px 0;
  }
 
 
@@ -556,9 +566,13 @@ img[alt*="service"]~p {
 
  .form-container input,
  .form-container textarea {
- 	height: 3em;
+ 	/* height: 3em; */
  	border: 2px solid #3A0812;
  	background-color: #f2f2f2;
+ }
+
+ .form-container input {
+	height: 30px;
  }
 
  .form-container label {
@@ -568,7 +582,7 @@ img[alt*="service"]~p {
  }
 
  .form-container textarea {
- 	min-height: 250px;
+ 	height: 200px;
  	margin-bottom: 20px;
  }
 
