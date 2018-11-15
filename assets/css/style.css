@@ -525,7 +525,7 @@ img[alt*="gallery"] {
  .services p:after {
  	content: "";
  	display: block;
- 	width: inherit;
+ 	width: 75%;
  	height: 3px;
  	background-color: #f2f2f2;
  	margin-top: 5em;
@@ -643,3 +643,96 @@ img[alt*="service"]~p {
  .contact {
  	float: right;
  }
+
+
+/*===================== MEDIA QUERIES ================*/
+
+/*Tablets Styles*/
+@media only screen and (max-width: 960px) {
+	nav {
+		visibility: hidden;
+	}
+
+	main {
+		margin-left: 0;
+	}
+
+	.banner,
+	.about,
+	.services,
+	.projects,
+	.gallery, footer {
+    	padding: 30px;
+	}
+
+	.banner h1 {
+		font-size: 3rem;
+	}
+
+	.banner p {
+		font-size: 0.9rem;
+	}
+
+	.box {
+		width: 70%;
+ 		padding: 20px;
+	}
+
+	.box2 {
+		width: 80%;
+	}
+
+	.bar:after {
+		margin-bottom: 5px;
+ 		margin-top: 10px;
+	}
+
+	.about h2 {
+		font-size: 3em;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+	.about .left {
+		width: 70%;
+	}
+
+	.text-content {
+		padding: 10px;
+	}
+
+	.services h2 {
+		font-size: 3em;
+		transform: translate(0px, 0px)
+	}
+
+	.services .form-content {
+		padding: 10px;
+		width: 90%;
+		transform: translate(0px, 0px)
+	}
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+
+	.banner h1 {
+		font-size: 2.3rem;
+	}
+
+	.banner p {
+		font-size: 0.9rem;
+	}
+
+	.box {
+		width: 70%;
+ 		padding: 10px;
+	}
+
+	.bar:after {
+		margin-bottom: 5px;
+ 		margin-top: 10px;
+	}
+}
