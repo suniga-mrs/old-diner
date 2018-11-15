@@ -637,7 +637,6 @@ img[alt*="service"]~p {
 
  	width: 20px;
  	height: 20px;
- 	/* border: 1px solid black; */
  	display: block;
  	float: left;
  	margin-right: 10px;
@@ -665,7 +664,7 @@ img[alt*="service"]~p {
 	.services,
 	.projects,
 	.gallery, footer {
-    	padding: 30px;
+    	padding: 20px;
 	}
 
 	.banner h1 {
@@ -703,10 +702,17 @@ img[alt*="service"]~p {
 		width: 70%;
 	}
 
+	.about .right {
+		position: absolute;
+		margin-top: 10%;
+		left: 50%;
+	}
+
 	.text-content {
 		padding: 0px;
 		transform: translate(35px, 160px);
 		position: relative;
+		width: 80%;
 	}
 
 	.services h2 {
@@ -719,6 +725,9 @@ img[alt*="service"]~p {
 		padding: 10px;
 		width: 90%;
 		transform: translate(0px, 0px)
+	}
+	.services p:after {
+		margin-top: 1em;
 	}
 
 	.gallery h2 {
@@ -739,6 +748,24 @@ img[alt*="service"]~p {
 		float: none;
 		padding: 0;
 		margin: 0 auto;
+		border: none;
+		margin-top: 25%;
+	}
+
+	 .form-container form {
+	 	width: 100%;
+	 	background-color: #3A0812;
+	 	transform: translate(0px, 0px);
+	 	position: relative;
+ 	}
+
+ 	.form-container form {
+ 		padding: 10px 0;
+ 	}
+
+ 	.form-container textarea {
+	    height: 70px;
+	    margin-bottom: 10px;
 	}
 }
 
@@ -761,5 +788,19 @@ img[alt*="service"]~p {
 	.bar:after {
 		margin-bottom: 5px;
  		margin-top: 10px;
+	}
+
+	.text-content {
+		width: 100%;
+	}
+
+	.about .left {
+		width: 80%;
+	}
+
+	.about .right {
+		position: absolute;
+		margin-top: 2%;
+		left: 50%;
 	}
 }
