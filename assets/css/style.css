@@ -107,7 +107,15 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  .about h2,
  .services h2 {
 	 color: #ECA72C;
-	 max-width: 50%;
+	 max-width: 40%;
+ }
+
+ .services h2 {
+ 	 font-size: 3.4em;
+ }
+
+ .services p {
+ 	font-size: 0.8em;
  }
 
  .gallery h2{
@@ -117,10 +125,11 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  
  .gallery p {
 	 color: white;
+	 font-size: 0.8em;
  }
 
  .gallery h2 {
- 	font-size: 5em;
+ 	font-size: 4em;
  }
 
  .gallery h3 {
@@ -353,7 +362,7 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  .about p:after {
  	content: "";
  	display: block;
- 	width: 59%;
+ 	width: 55%;
  	height: 3px;
  	background-color: #f2f2f2;
  	margin-top: 1.6em;
@@ -417,7 +426,7 @@ font-family: 'IBM Plex Sans', sans-serif;*/
  	background-color: #f2f2f2;
  	min-height: 100vh;
 	 padding: initial 4%;
-	padding-top: 5%;
+	padding-top: 2%;
  }
 
  .img-caption {
@@ -509,7 +518,6 @@ img[alt*="gallery"] {
  .services h2 {
  	/*float: left;*/
  	position: absolute;
- 	font-size: 5em;
  	transform: translate(50px, 80px);
  	z-index: 100;
  }
@@ -572,17 +580,18 @@ img[alt*="service"]~p {
  }
 
  .form-container input {
-	height: 30px;
+	height: 25px;
  }
 
  .form-container label {
  	color: #f2f2f2;
  	margin-bottom: 5px;
  	margin-top: 10px;
+ 	font-size: 0.8em;
  }
 
  .form-container textarea {
- 	height: 200px;
+ 	height: 100px;
  	margin-bottom: 20px;
  }
 
@@ -598,12 +607,12 @@ img[alt*="service"]~p {
  .form-container input[type="submit"] {
  	width: 30%;
  	margin: 0px auto;
- 	height: 55px;
+ 	height: 40px;
  	background-color: #ECA72C;
  	border: 3px solid #3A0812;
  	border-radius: 30px;
 	 color: #3A0812;
-	 font-size: 1rem;
+	 font-size: 0.8rem;
 	font-weight: 600;
 	
  }
